@@ -1,0 +1,1 @@
+Live editor backend runs on the already prepared server that the npm package "y-websockets-server" . Simply run the command npx y-websockets-server to run the websocket server
