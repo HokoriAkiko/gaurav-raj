@@ -13,7 +13,7 @@ const Editor = ({ user_name }) => {
   useEffect(()=>{
     const y_document = new y.Doc();
     const y_text = y_document.getText();
-    const provider = new WebsocketProvider("ws://localhost:1234",room,y_document);
+    const provider = new WebsocketProvider("wss://live-editor-task-1-backend.onrender.com",room,y_document);
     const awareness = provider.awareness;
     const binding = new TextAreaBinding(y_text,area_ref.current);
 
