@@ -1,7 +1,7 @@
 "use client"
 import { forwardRef, useImperativeHandle, useState } from "react";
 
-const ImageFile = forwardRef(({placeholder,label, required},ref)=>{
+const ImageFile = forwardRef(function ImageFile({placeholder,label, required},ref){
     const [data,set_data] = useState();
 
     const url = data ? URL.createObjectURL(data[0]) : null;

@@ -1,7 +1,7 @@
 "use client"
 import { forwardRef, useImperativeHandle, useState } from "react";
 
-const InputField = forwardRef(({ type = "text", placeholder, required, label }, ref) => {
+const InputField = forwardRef(function InputField({ type = "text", placeholder, required, label }, ref) {
     const [data, set_data] = useState("");
 
     const email_regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
